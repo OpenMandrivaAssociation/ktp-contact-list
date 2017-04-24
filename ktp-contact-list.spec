@@ -1,6 +1,6 @@
 Summary:	KDE Telepathy contact list handler
 Name:		ktp-contact-list
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -55,7 +55,7 @@ BuildRequires:	pkgconfig(shared-mime-info)
 %description
 KDE Telepathy contact list handler
 
-%files
+%files -f ktp-contactlist.lang
 %{_bindir}/ktp-contactlist
 %{_datadir}/applications/org.kde.ktpcontactlist.desktop
 %{_datadir}/dbus-1/services/org.kde.ktpcontactlist.service
@@ -69,3 +69,4 @@ KDE Telepathy contact list handler
 
 %install
 %ninja_install -C build
+%find_lang ktp-contactlist
