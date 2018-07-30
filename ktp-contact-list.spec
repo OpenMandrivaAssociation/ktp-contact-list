@@ -1,6 +1,6 @@
 Summary:	KDE Telepathy contact list handler
 Name:		ktp-contact-list
-Version:	 18.04.2
+Version:	 18.07.80
 Release:	1
 Epoch:		1
 License:	GPLv2+
