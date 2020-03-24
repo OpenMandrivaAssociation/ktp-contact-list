@@ -1,6 +1,6 @@
 Summary:	KDE Telepathy contact list handler
 Name:		ktp-contact-list
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -13,6 +13,7 @@ Url:		http://www.kde.org
 %define ftpdir stable
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		ktp-contact-list-qt-5.15.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5DBus)
@@ -61,7 +62,7 @@ KDE Telepathy contact list handler
 %{_datadir}/dbus-1/services/org.kde.ktpcontactlist.service
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build

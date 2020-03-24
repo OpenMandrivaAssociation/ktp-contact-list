@@ -1,0 +1,11 @@
+diff -up ktp-contact-list-20.03.80/tooltips/ktooltipwindow.cpp.omv~ ktp-contact-list-20.03.80/tooltips/ktooltipwindow.cpp
+--- ktp-contact-list-20.03.80/tooltips/ktooltipwindow.cpp.omv~	2020-03-24 02:29:55.952139522 +0100
++++ ktp-contact-list-20.03.80/tooltips/ktooltipwindow.cpp	2020-03-24 02:30:00.028127843 +0100
+@@ -24,6 +24,7 @@
+ #include <kwindowsystem.h>
+ 
+ #include <QPainter>
++#include <QPainterPath>
+ #include <QVBoxLayout>
+ 
+ KToolTipWindow::KToolTipWindow(QWidget *content) :
